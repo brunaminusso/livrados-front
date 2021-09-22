@@ -19,13 +19,32 @@ btnLogin.addEventListener('click', async (evt) => {
       const result = await fetch('http://localhost:3000/login', requestDetails);
       const jsonResult = await result.json();
 
-         if (jsonResult.error)
-            return window.alert(jsonResult.error);
+         if (jsonResult.error) {
+            return Swal.fire({
+               icon: "error",
+               title: "Opa..",
+               text: jsonResult.error,
+               showConfirmButton: false,
+               timer: 2000,
+            });
+         }
+
 
          localStorage.setItem('token', jsonResult.token);
 
-         window.alert(jsonResult.success);
-         window.location.replace('https://livrados.vercel.app');
+         //window.alert(jsonResult.success);
+
+         Swal.fire({
+            icon: "success",
+            /* title: "Opa..", */
+            text: jsonResult.success,
+            showConfirmButton: false,
+            timer: 2000,
+         });
+
+         setTimeout(() => {
+            window.location.replace('https://livrados.vercel.app');
+         }, 2200);
          
    } catch (err) {
       console.log("Erro ao acessar endpoint de login : " + err);
