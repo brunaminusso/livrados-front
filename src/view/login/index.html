@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Login</title>
+
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/login.css"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+         rel="stylesheet"
+      />
+      <script
+         src="https://kit.fontawesome.com/39af08bb81.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+
+   <body>
+
+      <div class="container-logo">
+         <div class="logoSuperior">
+            <img src="./img/LivradosLogo.png" style="width: 240px">
+         </div>
+      </div>
+
+      <div class="background-upon">
+
+         <div id="container-login" class="login">
+            <h2>Login</h2>
+
+            <form>
+               <label for="email">Email</label>
+               <input type="email" id="email" placeholder="Insira seu email"  />
+
+               <label for="password">Senha</label>
+               <div class="pass-section">
+                  <input type="password" id="password" placeholder="Insira sua senha"  />
+                  <i class="far fa-eye icon-psw" id="pass-reveal-png"></i>
+               </div>
+
+               <div class="forgot-pass-section">
+                  <a class="forgot-pass-link" href="../recuperar_senha/">Esqueceu a senha?</a>
+               </div>
+
+               <div class="section-btn-entrar">
+                  <input type="submit" id="btnLogin" class="btn-entrar" value="Entrar"/>
+               </div>
+            </form>
+
+            <section class="novo-cadastro" id="novo-cadastro">
+               <p class="novocad-description">Ainda não possui uma conta?</p>
+                  <a class="novocad-btn" href="../cadastrar_cliente/">Cadastre-se</a>
+            </section>
+         </div>
+      </div>
+      
+      <script src="js/login.js"></script>
+      <script src="js/password-reveal.js"></script>
+   </body>
+</html>

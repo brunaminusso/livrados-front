@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="generator" />
+    <title>Crie sua conta</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+	
+    <link href="css/cliente.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class='container'>
+		<div class="logoSuperior">
+			<img src="./img/Livrados.png" style="width: 120px">
+		 </div>
+	  	<div class='card'>
+		<h2>Cadastro de Livros</h2>
+		
+		<div id='msgError'></div>
+		<div id='msgSucess'></div>
+		
+		<div id='msgError'></div>
+		<div id='msgSuccess'></div>
+
+
+				<div class="row">
+					<div class="label-float">
+						<input type="text" id="isbn" maxlength="13" placeholder=" " required>
+						<label id="labelIsbn" for="isbn">ISBN</label>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="label-float">
+						<input type="text" id="titulo" maxlength="30" placeholder=" " required>
+						<label id="labelTitulo" for="titulo">Título</label>
+					</div>
+				</div>
+		 
+				<div class="row">
+					<div class="label-float col-9">
+						<input type="text" id="autor" maxlength="30" placeholder=" " required>
+						<label id="labelAutor" for="autor">Autor</label>
+					</div> 
+	
+				</div>
+		
+				<div class="row">
+					<div class="label-float col">
+						<input type="text" id="edicao" maxlength="15" placeholder=" " required>
+						<label id="labelEdicao" for="edicao">Edição</label>
+					</div>    
+					<div class="label-float col">
+						<input type="text" id="editora" maxlength="15" placeholder=" " required>
+						<label id="labelEditora" for="editora">Editora</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label-float col">
+						<input type="text" id="idioma" maxlength="15" placeholder=" " required>
+						<label id="labelIdioma" for="idioma">Idioma</label>
+					</div>
+					<div class="label-float col">
+						<input type="text" id="categoria" maxlength="15" placeholder=" " required>
+						<label id="labelCategoria" for="acabamento">Categoria</label>
+					 </div>
+				</div>
+				<div class='justify-center'>
+				   <button onclick='cadastrar()'>Cadastrar</button>
+				</div>
+
+				</div>
+		</div>  
+	  </div>
+
+		</div>
+		  <script src="js/cad_livro.js"></script>
+	
+		
+		    <script type="text/javascript">
+				$("#celular").mask("(00) 00000-0000");
+				$("#cep").mask("00000-000");
+			</script>
+
+	
+   </body>
+</html>

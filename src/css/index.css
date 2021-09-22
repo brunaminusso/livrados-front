@@ -1,0 +1,143 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: none;
+   font-family: "Raleway", "Helvetica";
+   color: #323232;
+}
+
+
+
+/* ***********************
+         MENU
+*********************** */
+
+.container-menu {
+   width: 100%;
+   height: 125px;
+   background-image: linear-gradient(to top, #d8d8d8, #fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #fafafa);
+
+   border-bottom: solid 1px #32323222;
+}
+
+.container-menu img {
+   margin-left: 50px;
+   margin-top: 22px;
+   width: 200px;
+}
+   
+
+/* ***********************
+      MEIO DA TELA
+*********************** */
+
+.bg-img-book {
+   width: 100%;
+   height: 570px;
+
+   display: flex;
+
+   position: relative;
+}
+
+.bg-img-book::after {
+   content: "";
+   background-image: url(../img/livros-bg.jpg);
+   background-size: cover;
+
+   opacity: 0.7;
+
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+
+   position: absolute;
+   z-index: -1;
+}
+
+.search-bar-area {
+   position: relative;
+   width: 45%;
+
+   min-width: 325px;
+   margin: 280px auto 0px auto;
+}
+
+.search-bar-area input {
+   border-radius: 50px;
+   outline: none;
+}
+
+.searcher-box {
+   width: 90%;
+   color: #323232;
+
+   margin-top: 8px;
+   padding: 10px 17px;
+
+   border: 1px solid #323232;
+   box-shadow: 0 0 50px #32323255;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+   color: #32323277;
+}
+
+.btn-searcher {
+   position: absolute;
+   right: 0;
+   background-color: #f8a72d;
+
+   border: 1px solid #32323233;
+   color: #FFF;
+
+   letter-spacing: .7px;
+   text-transform: uppercase;
+   font-weight: bold;
+
+   cursor: pointer;
+   padding: 17px 27px;
+   transition: transform .3s ease, background-color .5s ease, color .3s;
+}
+
+.btn-searcher:hover {
+   transform: scale(1.15);
+   background-color: #fafafa;
+   color: #323232;
+   border: 1px solid #f8a72d;
+}
+
+
+/* ***********************
+         RODAPÉ
+*********************** */
+
+footer.container-footer {
+   background-image: linear-gradient(to top, #323232, #323232, #323232, #323232, #323232, #323232, #323232, #323232, #434343);
+
+   width: 100%;
+   height: 220px;
+
+   border-top: solid 1px #323232;
+
+   text-align: center;
+}
+
+footer img{
+   width: 110px;
+   height: 110px;
+
+   margin-top: 50px;
+}
+
+footer p {
+   display: block;
+   color: #fafafa;
+}
+
+footer strong{
+   color: #fafafa;
+}

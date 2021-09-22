@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Recuperar senha</title>
+
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/recuperar-senha.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div id="container-login" class="container-login">
+         <div id="header-block">
+            <h2>Recuperar senha</h2>
+
+            <a href="../login/">Voltar para o Login</a>
+         </div>
+
+         <p>
+            Iremos enviar a redefinição de senha para o Email informado abaixo.
+            Certifique-se de digitar corretamente o endereço.
+         </p>
+
+         <form>
+            <div id="enlace-email-btn">
+               <div>
+                  <label for="email">Email</label>
+                  <input
+                     type="email"
+                     id="email"
+                     placeholder="Insira seu email"
+                     autocomplete="off"
+                  />
+               </div>
+
+               <input type="submit" value="Enviar" />
+            </div>
+         </form>
+      </div>
+      <script src="js/password-reveal.js"></script>
+   </body>
+</html>

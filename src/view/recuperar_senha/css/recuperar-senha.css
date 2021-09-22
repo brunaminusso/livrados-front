@@ -1,0 +1,137 @@
+/* Resetando configurações padrões do Browser */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: none;
+   font-family: "Raleway", "Helvetica";
+   color: #323232;
+}
+
+/***************************
+
+      Configurações Gerais 
+
+****************************/
+
+body {
+
+   background-size: cover;
+}
+
+textarea:focus,
+input:focus {
+   outline: none;
+}
+
+/***************************
+
+      Container login
+
+****************************/
+
+.container-login {
+   background-color: #fff;
+   width: 45vw;
+   margin: 0 auto;
+   margin-top: 25vh;
+   text-align: left;
+   border-radius: 10px;
+   padding: 30px 30px;
+   border: 1px solid #F2F2F2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+   transition: 0.3s;
+}
+
+p {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   font-size: 15px;
+   text-align: left;
+}
+
+#container-login:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#header-block {
+   display: flex;
+   justify-content: space-between;
+}
+
+/***************************
+
+         Formulário
+
+****************************/
+
+form {
+   margin-top: 20px;
+   text-align: left;
+}
+
+/***************************
+
+      INPUTS E LABELS
+
+****************************/
+
+label,
+input {
+   width: 225%;
+   font-family: "Raleway", "Helvetica";
+}
+
+input {
+   margin-bottom: 15px;
+   border-bottom: 2px solid #f8a72d;
+   padding: 10px;
+}
+
+input:focus {
+   border-bottom: 2px solid #f8a72d88;
+   transition: 1s;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+input[type="submit"] {
+   background-color: #f8a72d;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   font-weight: 1000;
+   text-transform: uppercase;
+   box-shadow: 0 0 15px #f8a72d;
+   width: 150px;
+   height: 40px;
+   margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+   background-color: #f8a72dbb;
+   transition: 0.5s;
+}
+
+label {
+   font-size: 1.1rem;
+   line-height: 25px;
+}
+
+#enlace-email-btn {
+   display: flex;
+   justify-content: space-between;
+}
+
+a {
+   font-size: 0.85rem;
+}
+
+a:hover {
+   color: #696969;
+   transition: 0.3s;
+}
