@@ -29,10 +29,14 @@ btnLogin.addEventListener('click', async (evt) => {
             });
          }
 
-
+         console.log('O Resultado do backend é: ');
+         console.log(jsonResult);
+         
          localStorage.setItem('token', jsonResult.token);
 
-         //window.alert(jsonResult.success);
+         //localStorage.setItem('user_name', jsonResult.user);
+         //localStorage.setItem('user_id', jsonResult.user._id);
+         //localStorage.setItem('user_id', jsonResult.user._id);
 
          Swal.fire({
             icon: "success",
@@ -44,7 +48,7 @@ btnLogin.addEventListener('click', async (evt) => {
 
          setTimeout(() => {
             window.location.replace('https://livrados.vercel.app');
-         }, 2200);
+         }, 15000);//2200
          
    } catch (err) {
       console.log("Erro ao acessar endpoint de login : " + err);
