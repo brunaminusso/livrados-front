@@ -71,8 +71,6 @@ btnCadastrar.addEventListener('click', async (evt) => {
          const fetching = await fetch('http://localhost:3000/user-registration', fetchParams);
          const fetchRes = await fetching.json();
 
-         console.log(fetchRes);
-
          if (fetchRes.error) {
             return Swal.fire({
                icon: "error",
