@@ -68,7 +68,7 @@ btnCadastrar.addEventListener('click', async (evt) => {
 
          console.log(fetchParams)
          
-         const fetching = await fetch('http://localhost:3000/user-registration', fetchParams);
+         const fetching = await fetch('https://livrados-backend.herokuapp.com/user-registration', fetchParams);
          const fetchRes = await fetching.json();
 
          if (fetchRes.error) {
