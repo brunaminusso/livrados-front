@@ -16,7 +16,7 @@ btnLogin.addEventListener('click', async (evt) => {
    }
 
    try {
-      const result = await fetch('http://localhost:3000/login', requestDetails);
+      const result = await fetch('https://livrados-backend.herokuapp.com/login', requestDetails);
       const jsonResult = await result.json();
 
          if (jsonResult.error) {
