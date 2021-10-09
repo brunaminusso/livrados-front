@@ -7,13 +7,32 @@
    <title>Livrados</title>
 
    <link rel="stylesheet" href="./css/index.css">
+   <meta charset="utf-8">
+   <meta name="description" content="">
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
    <!-- <script src="./js/isLoged.js"></script> -->
 </head>
 <body>
-
-   <header class="container-menu">
-      <img src="./img/LivradosLogo.png" >
+   <header>
+      <a class="logo" href="/"><img class ="logoimagem" src="img/logo.png" alt="logo"></a>
+      <nav>
+          <ul class="nav__links">
+              <li><a href="#">Explorar</a></li>
+              <li><a href="#">Contato</a></li>
+          </ul>
+      </nav>
+      <a class="cta" href="./view/login/index.html">Entrar</a>
+      <p class="menu cta">Menu</p>
    </header>
+   <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+          <a href="#">Explorar</a>
+          <a href="#">Contato</a>
+      </div>
+   </div>
+   <script type="text/javascript" src="mobile.js"></script>
 
    <div class="bg-img-book">
 
@@ -23,11 +42,8 @@
       </div>
       
    </div>
-
-   <footer class="container-footer">
-      <img src="./img/BMBLogo.png" >
-      <p>Desenvolvido por: <strong>BMB</strong></p>
-   </footer>
+   
+   
 
 </body>
 </html>
