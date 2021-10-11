@@ -118,4 +118,9 @@
  *************************/
  .logoBMB {
   width: 70px;
+  align-self: center;
+}
+
+.icon {
+   justify-content: center;
 }
